@@ -6,7 +6,7 @@
 
 </div>
 
-## <img src="assets/mewtwo.png" width="24"/> `> whoami`
+## <img src="assets/mewtwo.gif" width="28"/> `> whoami`
 
 **Staff Engineer** at [CloudBees](https://www.cloudbees.com/). I love code and how it's written.
 
@@ -16,7 +16,7 @@ I'm super into tools, automation, ricing environments, Linux, CLIs, terminal. Ba
 
 I believe in well organized code bases, proper docs, and slick developer experience. Not the "there was a README we forgot to commit 2 years ago" kind.
 
-## <img src="assets/pikachu.png" width="24"/> `> cat interests.txt`
+## <img src="assets/pikachu.gif" width="28"/> `> cat interests.txt`
 
 - **Coding**, Linux, terminal tooling (obviously)
 - **Reading** (don't hesitate to ask me about books, I love talking about that)
@@ -29,7 +29,7 @@ I believe in well organized code bases, proper docs, and slick developer experie
 
 Basically anything that keeps the brain busy.
 
-## <img src="assets/squirtle.png" width="24"/> `> cat /etc/causes`
+## <img src="assets/squirtle.gif" width="28"/> `> cat /etc/causes`
 
 I volunteer at **[SOS Tortues Bretagne](https://www.sostortuebretagne.com/)**, a tortoise rescue and conservation association in Brittany, France. They take care of aquatic and land tortoises (not sea turtles, the distinction matters).
 
@@ -37,12 +37,12 @@ I'm also working on a tortoise magazine: **[cheloniens.org](https://cheloniens.o
 
 Tortoises have been around for 200 million years. The least we can do is help them survive us.
 
-## <img src="assets/gengar.png" width="24"/> `> spawn_ --latest`
+## <img src="assets/gengar.gif" width="28"/> `> spawn_ --latest`
 
 <!-- BLOG-POST-LIST:START -->
 <!-- BLOG-POST-LIST:END -->
 
-## <img src="assets/bulbasaur.png" width="24"/> `> echo $LINKS`
+## <img src="assets/bulbasaur.gif" width="28"/> `> echo $LINKS`
 
 [![blog](https://img.shields.io/badge/spawn__-blog-1e1e2e?style=flat-square&logo=ghost&logoColor=89b4fa)](https://blog.neveux.me)
 [![site](https://img.shields.io/badge/neveux.me-site-1e1e2e?style=flat-square&logo=firefoxbrowser&logoColor=89b4fa)](https://neveux.me)
