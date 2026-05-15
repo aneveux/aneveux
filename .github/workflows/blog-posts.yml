@@ -17,7 +17,7 @@ jobs:
           feed_list: "https://blog.neveux.me/posts/index.xml"
           max_post_count: 5
           template: "$newline- [`$title`]($url) — $date"
-          date_format: "yyyy-MM-dd"
+          date_format: "yyyy-mm-dd"
           commit_message: "chore: update blog posts"
           committer_username: "github-actions[bot]"
           committer_email: "github-actions[bot]@users.noreply.github.com"
