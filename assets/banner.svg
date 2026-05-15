@@ -1,0 +1,240 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <style>
+      .bg { fill: #1e1e2e; }
+      .cell { fill: #89b4fa; opacity: 0.7; }
+      .cell-mauve { fill: #cba6f7; opacity: 0.6; }
+      .cell-dim { fill: #89b4fa; opacity: 0.15; }
+      .cell-ghost { fill: #89b4fa; opacity: 0.05; }
+
+      .beacon-fade { animation: beacon 1.2s step-end infinite; }
+      @keyframes beacon {
+        0%, 100% { opacity: 0.7; }
+        50% { opacity: 0.08; }
+      }
+
+      .pulse-1 { animation: pulse1 1.8s step-end infinite; }
+      .pulse-2 { animation: pulse2 1.8s step-end infinite; }
+      .pulse-3 { animation: pulse3 1.8s step-end infinite; }
+
+      @keyframes pulse1 {
+        0%, 100% { opacity: 0.7; }
+        33% { opacity: 0.15; }
+        66% { opacity: 0.4; }
+      }
+      @keyframes pulse2 {
+        0%, 100% { opacity: 0.15; }
+        33% { opacity: 0.7; }
+        66% { opacity: 0.15; }
+      }
+      @keyframes pulse3 {
+        0%, 100% { opacity: 0.4; }
+        33% { opacity: 0.15; }
+        66% { opacity: 0.7; }
+      }
+
+      .glider { animation: glide 4s linear infinite; }
+      @keyframes glide {
+        0% { transform: translate(0, 0); opacity: 0.6; }
+        90% { opacity: 0.6; }
+        100% { transform: translate(32px, 32px); opacity: 0; }
+      }
+
+      .name {
+        font-family: 'Courier New', monospace;
+        font-size: 22px;
+        fill: #cdd6f4;
+        font-weight: bold;
+        letter-spacing: 3px;
+      }
+      .tagline {
+        font-family: 'Courier New', monospace;
+        font-size: 13px;
+        fill: #b4befe;
+        letter-spacing: 1.5px;
+      }
+      .subtitle {
+        font-family: 'Courier New', monospace;
+        font-size: 11px;
+        fill: #a6adc8;
+      }
+      .prompt {
+        font-family: 'Courier New', monospace;
+        font-size: 11px;
+        fill: #89b4fa;
+      }
+      .cursor {
+        animation: blink-cursor 1s step-end infinite;
+      }
+      @keyframes blink-cursor {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      .grid-line { stroke: #313244; stroke-width: 0.5; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="800" height="200" rx="6"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.3">
+    <line class="grid-line" x1="0" y1="8" x2="800" y2="8"/>
+    <line class="grid-line" x1="0" y1="16" x2="800" y2="16"/>
+    <line class="grid-line" x1="0" y1="24" x2="800" y2="24"/>
+    <line class="grid-line" x1="0" y1="32" x2="800" y2="32"/>
+    <line class="grid-line" x1="0" y1="40" x2="800" y2="40"/>
+    <line class="grid-line" x1="0" y1="48" x2="800" y2="48"/>
+    <line class="grid-line" x1="0" y1="56" x2="800" y2="56"/>
+    <line class="grid-line" x1="0" y1="64" x2="800" y2="64"/>
+    <line class="grid-line" x1="0" y1="72" x2="800" y2="72"/>
+    <line class="grid-line" x1="0" y1="80" x2="800" y2="80"/>
+    <line class="grid-line" x1="0" y1="88" x2="800" y2="88"/>
+    <line class="grid-line" x1="0" y1="96" x2="800" y2="96"/>
+    <line class="grid-line" x1="0" y1="104" x2="800" y2="104"/>
+    <line class="grid-line" x1="0" y1="112" x2="800" y2="112"/>
+    <line class="grid-line" x1="0" y1="120" x2="800" y2="120"/>
+    <line class="grid-line" x1="0" y1="128" x2="800" y2="128"/>
+    <line class="grid-line" x1="0" y1="136" x2="800" y2="136"/>
+    <line class="grid-line" x1="0" y1="144" x2="800" y2="144"/>
+    <line class="grid-line" x1="0" y1="152" x2="800" y2="152"/>
+    <line class="grid-line" x1="0" y1="160" x2="800" y2="160"/>
+    <line class="grid-line" x1="0" y1="168" x2="800" y2="168"/>
+    <line class="grid-line" x1="0" y1="176" x2="800" y2="176"/>
+    <line class="grid-line" x1="0" y1="184" x2="800" y2="184"/>
+    <line class="grid-line" x1="0" y1="192" x2="800" y2="192"/>
+    <line class="grid-line" x1="8" y1="0" x2="8" y2="200"/>
+    <line class="grid-line" x1="16" y1="0" x2="16" y2="200"/>
+    <line class="grid-line" x1="24" y1="0" x2="24" y2="200"/>
+    <line class="grid-line" x1="32" y1="0" x2="32" y2="200"/>
+    <line class="grid-line" x1="40" y1="0" x2="40" y2="200"/>
+    <line class="grid-line" x1="48" y1="0" x2="48" y2="200"/>
+    <line class="grid-line" x1="56" y1="0" x2="56" y2="200"/>
+    <line class="grid-line" x1="64" y1="0" x2="64" y2="200"/>
+    <line class="grid-line" x1="72" y1="0" x2="72" y2="200"/>
+    <line class="grid-line" x1="80" y1="0" x2="80" y2="200"/>
+    <line class="grid-line" x1="88" y1="0" x2="88" y2="200"/>
+    <line class="grid-line" x1="96" y1="0" x2="96" y2="200"/>
+    <line class="grid-line" x1="704" y1="0" x2="704" y2="200"/>
+    <line class="grid-line" x1="712" y1="0" x2="712" y2="200"/>
+    <line class="grid-line" x1="720" y1="0" x2="720" y2="200"/>
+    <line class="grid-line" x1="728" y1="0" x2="728" y2="200"/>
+    <line class="grid-line" x1="736" y1="0" x2="736" y2="200"/>
+    <line class="grid-line" x1="744" y1="0" x2="744" y2="200"/>
+    <line class="grid-line" x1="752" y1="0" x2="752" y2="200"/>
+    <line class="grid-line" x1="760" y1="0" x2="760" y2="200"/>
+    <line class="grid-line" x1="768" y1="0" x2="768" y2="200"/>
+    <line class="grid-line" x1="776" y1="0" x2="776" y2="200"/>
+    <line class="grid-line" x1="784" y1="0" x2="784" y2="200"/>
+    <line class="grid-line" x1="792" y1="0" x2="792" y2="200"/>
+  </g>
+
+  <!-- Ghost cells for texture -->
+  <g>
+    <rect class="cell-ghost" x="120" y="24" width="8" height="8"/>
+    <rect class="cell-ghost" x="136" y="40" width="8" height="8"/>
+    <rect class="cell-ghost" x="112" y="56" width="8" height="8"/>
+    <rect class="cell-ghost" x="680" y="32" width="8" height="8"/>
+    <rect class="cell-ghost" x="720" y="48" width="8" height="8"/>
+    <rect class="cell-ghost" x="696" y="72" width="8" height="8"/>
+    <rect class="cell-ghost" x="144" y="160" width="8" height="8"/>
+    <rect class="cell-ghost" x="128" y="176" width="8" height="8"/>
+    <rect class="cell-ghost" x="704" y="152" width="8" height="8"/>
+    <rect class="cell-ghost" x="736" y="168" width="8" height="8"/>
+  </g>
+
+  <!-- Pulsar cluster (top-left) -->
+  <g>
+    <rect class="cell pulse-1" x="32" y="24" width="8" height="8"/>
+    <rect class="cell pulse-2" x="40" y="24" width="8" height="8"/>
+    <rect class="cell pulse-3" x="48" y="24" width="8" height="8"/>
+    <rect class="cell pulse-3" x="32" y="32" width="8" height="8"/>
+    <rect class="cell pulse-1" x="48" y="32" width="8" height="8"/>
+    <rect class="cell pulse-2" x="32" y="40" width="8" height="8"/>
+    <rect class="cell pulse-3" x="40" y="40" width="8" height="8"/>
+    <rect class="cell pulse-1" x="48" y="40" width="8" height="8"/>
+  </g>
+
+  <!-- Blinker (bottom-left) -->
+  <g>
+    <rect class="cell-mauve pulse-2" x="56" y="152" width="8" height="8"/>
+    <rect class="cell-mauve pulse-3" x="64" y="152" width="8" height="8"/>
+    <rect class="cell-mauve pulse-1" x="72" y="152" width="8" height="8"/>
+  </g>
+
+  <!-- Beacon (top-right) -->
+  <g>
+    <rect class="cell" x="720" y="24" width="8" height="8"/>
+    <rect class="cell" x="728" y="24" width="8" height="8"/>
+    <rect class="cell" x="720" y="32" width="8" height="8"/>
+    <rect class="cell beacon-fade" x="728" y="32" width="8" height="8"/>
+    <rect class="cell beacon-fade" x="736" y="40" width="8" height="8"/>
+    <rect class="cell" x="744" y="40" width="8" height="8"/>
+    <rect class="cell" x="736" y="48" width="8" height="8"/>
+    <rect class="cell" x="744" y="48" width="8" height="8"/>
+  </g>
+
+  <!-- Beacon (bottom-right, mauve) -->
+  <g>
+    <rect class="cell-mauve" x="752" y="144" width="8" height="8"/>
+    <rect class="cell-mauve" x="760" y="144" width="8" height="8"/>
+    <rect class="cell-mauve" x="752" y="152" width="8" height="8"/>
+    <rect class="cell-mauve beacon-fade" x="760" y="152" width="8" height="8"/>
+    <rect class="cell-mauve beacon-fade" x="768" y="160" width="8" height="8"/>
+    <rect class="cell-mauve" x="776" y="160" width="8" height="8"/>
+    <rect class="cell-mauve" x="768" y="168" width="8" height="8"/>
+    <rect class="cell-mauve" x="776" y="168" width="8" height="8"/>
+  </g>
+
+  <!-- Glider (animated) -->
+  <g class="glider" opacity="0.6">
+    <rect class="cell" x="80" y="80" width="8" height="8"/>
+    <rect class="cell" x="88" y="88" width="8" height="8"/>
+    <rect class="cell" x="72" y="96" width="8" height="8"/>
+    <rect class="cell" x="80" y="96" width="8" height="8"/>
+    <rect class="cell" x="88" y="96" width="8" height="8"/>
+  </g>
+
+  <!-- Scattered dim cells -->
+  <g>
+    <rect class="cell-dim" x="160" y="64" width="8" height="8"/>
+    <rect class="cell-dim" x="176" y="72" width="8" height="8"/>
+    <rect class="cell-dim" x="648" y="88" width="8" height="8"/>
+    <rect class="cell-dim" x="664" y="96" width="8" height="8"/>
+    <rect class="cell-dim" x="656" y="104" width="8" height="8"/>
+    <rect class="cell-dim" x="48" y="120" width="8" height="8"/>
+    <rect class="cell-dim" x="56" y="128" width="8" height="8"/>
+    <rect class="cell-dim" x="744" y="112" width="8" height="8"/>
+    <rect class="cell-dim" x="752" y="120" width="8" height="8"/>
+  </g>
+
+  <!-- More oscillating cells -->
+  <g>
+    <rect class="cell pulse-1" x="24" y="168" width="8" height="8"/>
+    <rect class="cell pulse-2" x="32" y="168" width="8" height="8"/>
+    <rect class="cell pulse-3" x="40" y="168" width="8" height="8"/>
+  </g>
+  <g>
+    <rect class="cell-mauve pulse-3" x="760" y="88" width="8" height="8"/>
+    <rect class="cell-mauve pulse-1" x="768" y="88" width="8" height="8"/>
+    <rect class="cell-mauve pulse-2" x="776" y="88" width="8" height="8"/>
+  </g>
+
+  <!-- Second glider (top-right, slower) -->
+  <g class="glider" style="animation-delay: -2s;" opacity="0.4">
+    <rect class="cell-mauve" x="680" y="64" width="8" height="8"/>
+    <rect class="cell-mauve" x="688" y="72" width="8" height="8"/>
+    <rect class="cell-mauve" x="672" y="80" width="8" height="8"/>
+    <rect class="cell-mauve" x="680" y="80" width="8" height="8"/>
+    <rect class="cell-mauve" x="688" y="80" width="8" height="8"/>
+  </g>
+
+  <!-- Center text block -->
+  <g>
+    <text class="name" x="400" y="80" text-anchor="middle">ANTOINE NEVEUX</text>
+    <text class="tagline" x="400" y="108" text-anchor="middle">REFACTORING CODE. EVOLVING MONSTERS.</text>
+    <text class="subtitle" x="400" y="135" text-anchor="middle">staff engineer · cloudbees · france</text>
+    <text class="prompt" x="400" y="165" text-anchor="middle">&gt; seed life_<rect class="cursor" x="441" y="155" width="7" height="12" fill="#89b4fa"/></text>
+    <text class="subtitle" x="400" y="185" text-anchor="middle">gen:∞ | pop:growing | state:alive</text>
+  </g>
+</svg>

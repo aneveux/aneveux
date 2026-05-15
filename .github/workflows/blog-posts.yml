@@ -1,0 +1,23 @@
+name: Latest blog posts
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-readme-with-blog:
+    name: Update README with latest blog posts
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: gautamkrishnar/blog-post-workflow@v1
+        with:
+          feed_list: "https://blog.neveux.me/posts/index.xml"
+          max_post_count: 5
+          template: "$newline- [`$title`]($url) — $date"
+          date_format: "yyyy-MM-dd"
+          commit_message: "chore: update blog posts"
+          committer_username: "github-actions[bot]"
+          committer_email: "github-actions[bot]@users.noreply.github.com"
