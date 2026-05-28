@@ -40,6 +40,7 @@ Tortoises have been around for 200 million years. The least we can do is help th
 ## <img src="assets/gengar.gif" width="28"/> `> spawn_ --latest`
 
 <!-- BLOG-POST-LIST:START -->
+- [`Your Environment Doesn&#39;t Know About the AI`](https://blog.neveux.me/posts/your-environment-doesnt-know-about-the-ai/) — 2026-05-28
 - [`My First Project Is My Environment`](https://blog.neveux.me/posts/my-first-project-is-my-environment/) — 2026-04-10<!-- BLOG-POST-LIST:END -->
 
 ## <img src="assets/bulbasaur.gif" width="28"/> `> echo $LINKS`
